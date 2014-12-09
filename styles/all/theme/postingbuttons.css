@@ -1,0 +1,74 @@
+/*
+*
+* @package Posting Buttons
+* @author dmzx (www.dmzx-web.net)
+* @copyright (c) 2014 by dmzx (www.dmzx-web.net)
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* 
+*/
+
+#format-buttons {
+   display: none;
+}
+
+#bold {	
+	background-image:  url("./images/text_bold.png");
+}
+
+#italic {	
+	background-image:  url("./images/text_italic.png");
+}
+
+#underline {	
+	background-image:  url("./images/text_underline.png");
+}
+
+#comment {	
+	background-image:  url("./images/comment.png");
+}
+
+#page_white_code {	
+	background-image:  url("./images/page_white_code.png");
+}
+
+#text_list_bullets {	
+	background-image:  url("./images/text_list_bullets.png");
+}
+
+#text_list_numbers {	
+	background-image:  url("./images/text_list_numbers.png");
+}
+
+#bullet_black {	
+	background-image:  url("./images/bullet_black.png");
+}
+
+#image{	
+	background-image:  url("./images/image.png");
+}
+
+#world_link{	
+	background-image:  url("./images/world_link.png");
+}
+
+#page_white_flash{	
+	background-image:  url("./images/page_white_flash.png");
+}
+
+#color_wheel{	
+	background-image:  url("./images/color_wheel.png");
+}
+
+.postingbuttons {
+    width: 22px !important;
+    height: 22px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    margin: 6px 0px !important;
+    border: 1px solid #979797 !important;
+}
+.postingbuttons:hover {
+    background-color: #ffffdf !important;
+    border: 1px solid #BC2A4D !important;
+}
+	
