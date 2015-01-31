@@ -42,12 +42,13 @@
       <!-- ENDIF -->
    </select>
    
-    <!-- EVENT posting_editor_buttons_custom_tags_before -->
+   	<!-- EVENT posting_editor_buttons_custom_tags_before -->
    
    	<select name="addbbcode_custom" onchange="bbstyle(this.form.addbbcode_custom.options[this.form.addbbcode_custom.selectedIndex].value*1);this.form.addbbcode_custom.selectedIndex = 0;">
-          <option value="#" selected="selected">Custom BBCodes</option>   
+          <option value="#" selected="selected">{L_CUSTOM_BBCODES}</option>
+		 	  
           <!-- BEGIN custom_tags --> 
           <option value="{custom_tags.BBCODE_ID}" title="{custom_tags.BBCODE_HELPLINE}">{custom_tags.BBCODE_TAG}</option>
 		  <!-- END custom_tags -->
-    </select>
+     </select>
 </div>

@@ -1,0 +1,5 @@
+services:
+    dmzx.postingbuttons.listener:
+        class: dmzx\postingbuttons\event\listener
+        tags:
+            - { name: event.listener }
