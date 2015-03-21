@@ -4,51 +4,50 @@
 * @author dmzx (www.dmzx-web.net)
 * @copyright (c) 2014 by dmzx (www.dmzx-web.net)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
-* 
+*
 -->
 
 <div id="format-postingbuttons">
-       <input type="button" class="postingbuttons" accesskey="b" name="addbbcode0" value="" onclick="bbstyle(0)" id="bold" title="{L_BBCODE_B_HELP}" />
-       <input type="button" class="postingbuttons" accesskey="i" name="addbbcode2" value="" onclick="bbstyle(2)" id="italic" title="{L_BBCODE_I_HELP}" />
-       <input type="button" class="postingbuttons" accesskey="u" name="addbbcode4" value="" onclick="bbstyle(4)" id="underline" title="{L_BBCODE_U_HELP}" />
+	   <input type="button" class="postingbuttons" accesskey="b" name="addbbcode0" value="" onclick="bbstyle(0)" id="bold" title="{L_BBCODE_B_HELP}" />
+	   <input type="button" class="postingbuttons" accesskey="i" name="addbbcode2" value="" onclick="bbstyle(2)" id="italic" title="{L_BBCODE_I_HELP}" />
+	   <input type="button" class="postingbuttons" accesskey="u" name="addbbcode4" value="" onclick="bbstyle(4)" id="underline" title="{L_BBCODE_U_HELP}" />
    <!-- IF S_BBCODE_QUOTE -->
-          <input type="button" class="postingbuttons" accesskey="q" name="addbbcode6" value="" onclick="bbstyle(6)" id="comment" title="{L_BBCODE_Q_HELP}" />
+		  <input type="button" class="postingbuttons" accesskey="q" name="addbbcode6" value="" onclick="bbstyle(6)" id="comment" title="{L_BBCODE_Q_HELP}" />
    <!-- ENDIF -->
-       <input type="button" class="postingbuttons" accesskey="c" name="addbbcode8" value="" onclick="bbstyle(8)" id="page_white_code" title="{L_BBCODE_C_HELP}" />
-       <input type="button" class="postingbuttons" accesskey="l" name="addbbcode10" value="" onclick="bbstyle(10)" id="text_list_bullets" title="{L_BBCODE_L_HELP}" />
-       <input type="button" class="postingbuttons" accesskey="o" name="addbbcode12" value="" onclick="bbstyle(12)" id="text_list_numbers" title="{L_BBCODE_O_HELP}" />
-       <input type="button" class="postingbuttons" accesskey="t" name="addlitsitem" value="" onclick="bbstyle(-1)" id="bullet_black" title="{L_BBCODE_LISTITEM_HELP}" />
+	   <input type="button" class="postingbuttons" accesskey="c" name="addbbcode8" value="" onclick="bbstyle(8)" id="page_white_code" title="{L_BBCODE_C_HELP}" />
+	   <input type="button" class="postingbuttons" accesskey="l" name="addbbcode10" value="" onclick="bbstyle(10)" id="text_list_bullets" title="{L_BBCODE_L_HELP}" />
+	   <input type="button" class="postingbuttons" accesskey="o" name="addbbcode12" value="" onclick="bbstyle(12)" id="text_list_numbers" title="{L_BBCODE_O_HELP}" />
+	   <input type="button" class="postingbuttons" accesskey="t" name="addlitsitem" value="" onclick="bbstyle(-1)" id="bullet_black" title="{L_BBCODE_LISTITEM_HELP}" />
    <!-- IF S_BBCODE_IMG -->
-          <input type="button" class="postingbuttons" accesskey="p" name="addbbcode14" value="" onclick="bbstyle(14)" id="image" title="{L_BBCODE_P_HELP}" />
+		  <input type="button" class="postingbuttons" accesskey="p" name="addbbcode14" value="" onclick="bbstyle(14)" id="image" title="{L_BBCODE_P_HELP}" />
    <!-- ENDIF -->
    <!-- IF S_LINKS_ALLOWED -->
-          <input type="button" class="postingbuttons" accesskey="w" name="addbbcode16" value="" onclick="bbstyle(16)" id="world_link" title="{L_BBCODE_W_HELP}" />
+		  <input type="button" class="postingbuttons" accesskey="w" name="addbbcode16" value="" onclick="bbstyle(16)" id="world_link" title="{L_BBCODE_W_HELP}" />
    <!-- ENDIF -->
    <!-- IF S_BBCODE_FLASH -->
-          <input type="button" class="postingbuttons" accesskey="d" name="addbbcode18" value="" onclick="bbstyle(18)" id="page_white_flash" title="{L_BBCODE_D_HELP}" />
+		  <input type="button" class="postingbuttons" accesskey="d" name="addbbcode18" value="" onclick="bbstyle(18)" id="page_white_flash" title="{L_BBCODE_D_HELP}" />
    <!-- ENDIF -->
-        <input type="button" class="postingbuttons" name="bbpalette"  value="" onclick="change_palette();" id="color_wheel" title="{L_BBCODE_S_HELP}" />
-      
-   
+		<input type="button" class="postingbuttons" name="bbpalette"  value="" onclick="change_palette();" id="color_wheel" title="{L_BBCODE_S_HELP}" />
+
    <select name="addbbcodes20" class="bbcode-size" onchange="bbfontstyle('[size=' + this.form.addbbcodes20.options[this.form.addbbcodes20.selectedIndex].value + ']', '[/size]');this.form.addbbcodes20.selectedIndex = 2;" title="{L_BBCODE_F_HELP}">
-      <option value="50">{L_FONT_TINY}</option>
-      <option value="85">{L_FONT_SMALL}</option>
-      <option value="100" selected="selected">{L_FONT_NORMAL}</option>
-      <!-- IF not MAX_FONT_SIZE or MAX_FONT_SIZE >= 150 -->
-         <option value="150">{L_FONT_LARGE}</option>
-         <!-- IF not MAX_FONT_SIZE or MAX_FONT_SIZE >= 200 -->
-            <option value="200">{L_FONT_HUGE}</option>
-         <!-- ENDIF -->
-      <!-- ENDIF -->
+	  <option value="50">{L_FONT_TINY}</option>
+	  <option value="85">{L_FONT_SMALL}</option>
+	  <option value="100" selected="selected">{L_FONT_NORMAL}</option>
+	  <!-- IF not MAX_FONT_SIZE or MAX_FONT_SIZE >= 150 -->
+		 <option value="150">{L_FONT_LARGE}</option>
+		 <!-- IF not MAX_FONT_SIZE or MAX_FONT_SIZE >= 200 -->
+			<option value="200">{L_FONT_HUGE}</option>
+		 <!-- ENDIF -->
+	  <!-- ENDIF -->
    </select>
-   
+
    	<!-- EVENT posting_editor_buttons_custom_tags_before -->
-   
+
    	<select name="addbbcode_custom" onchange="bbstyle(this.form.addbbcode_custom.options[this.form.addbbcode_custom.selectedIndex].value*1);this.form.addbbcode_custom.selectedIndex = 0;">
-          <option value="#" selected="selected">{L_CUSTOM_BBCODES}</option>
-		 	  
-          <!-- BEGIN custom_tags --> 
-          <option value="{custom_tags.BBCODE_ID}" title="{custom_tags.BBCODE_HELPLINE}">{custom_tags.BBCODE_TAG}</option>
+		  <option value="#" selected="selected">{L_CUSTOM_BBCODES}</option>
+
+		  <!-- BEGIN custom_tags -->
+		  <option value="{custom_tags.BBCODE_ID}" title="{custom_tags.BBCODE_HELPLINE}">{custom_tags.BBCODE_TAG}</option>
 		  <!-- END custom_tags -->
-     </select>
+	 </select>
 </div>

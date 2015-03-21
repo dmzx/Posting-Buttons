@@ -1,32 +1,32 @@
 {
-    "name": "dmzx/postingbuttons",
-    "type": "phpbb-extension",
-    "description": "This extension will add image posting buttons to posting template and all custom BBcodes in a dropdown box",
-    "homepage": "http://www.dmzx-web.net",
-    "version": "1.0.0",
-    "time": "2014-11-27",
+	"name": "dmzx/postingbuttons",
+	"type": "phpbb-extension",
+	"description": "This extension will add image posting buttons to posting template and all custom BBcodes in a dropdown box",
+	"homepage": "http://www.dmzx-web.net",
+	"version": "1.0.0",
+	"time": "2014-11-27",
 	"keywords": ["phpbb", "extension", "postingbuttons"],
-    "license": "GPL-2.0",
-    "authors": [
-        {
-            "name": "dmzx",
-            "homepage": "http://www.dmzx-web.net",
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "dmzx",
+			"homepage": "http://www.dmzx-web.net",
 			"email": "info@dmzx-web.net",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php": ">=5.3"
-    },
-    	"extra": {
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3"
+	},
+		"extra": {
 		"display-name": "Posting Buttons",
 		"soft-require": {
 			"phpbb/phpbb": "3.1.*@dev"
 		},
-        "version-check": {
-            "host": "www.phpbb.com",
-            "directory": "/customise/db/extension/posting_buttons",
-            "filename": "version_check"
-        }
+		"version-check": {
+			"host": "www.phpbb.com",
+			"directory": "/customise/db/extension/posting_buttons",
+			"filename": "version_check"
+		}
 	}
 }
