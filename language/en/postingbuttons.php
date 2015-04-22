@@ -38,5 +38,5 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-   'CUSTOM_BBCODES'   => 'Custom BBCodes',
+	'CUSTOM_BBCODES'	=> 'Custom BBCodes',
 ));
