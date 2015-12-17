@@ -1,5 +1,7 @@
 # phpBB Posting Buttons Extension
 
+[![Build Status](https://travis-ci.org/dmzx/Posting-Buttons.svg?branch=master)](https://travis-ci.org/dmzx/Posting-Buttons)
+
 ## Install
 
 1. Download the latest release.

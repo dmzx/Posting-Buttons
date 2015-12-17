@@ -14,12 +14,12 @@
 */
 if (!defined('IN_PHPBB'))
 {
-exit;
+	exit;
 }
 
 if (empty($lang) || !is_array($lang))
 {
-$lang = array();
+	$lang = array();
 }
 
 // DEVELOPERS PLEASE NOTE
@@ -39,5 +39,5 @@ $lang = array();
 //
 
 $lang = array_merge($lang, array(
-'CUSTOM_BBCODES'=>'Prilagođeni BBKodovi',
+	'CUSTOM_BBCODES'=>'Prilagođeni BBKodovi',
 ));
