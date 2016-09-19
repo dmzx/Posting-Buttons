@@ -3,8 +3,8 @@
 	"type": "phpbb-extension",
 	"description": "This extension will add image posting buttons to posting template and all custom BBcodes in a dropdown box",
 	"homepage": "http://www.dmzx-web.net",
-	"version": "1.0.0",
-	"time": "2014-11-27",
+	"version": "1.0.1",
+	"time": "2016-09-19",
 	"keywords": ["phpbb", "extension", "postingbuttons"],
 	"license": "GPL-2.0",
 	"authors": [
