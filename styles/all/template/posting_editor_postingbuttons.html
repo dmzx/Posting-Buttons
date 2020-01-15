@@ -1,0 +1,43 @@
+{% EVENT dmzx_postingbuttons_posting_editor_buttons_before %}
+<div id="format-postingbuttons">
+	{% EVENT dmzx_postingbuttons_posting_editor_buttons_prepend %}
+	<input type="button" class="postingbuttons" accesskey="b" name="addbbcode0" value="&#160;" onclick="bbstyle(0)" id="bold" title="{{ lang('BBCODE_B_HELP') }}" />
+	<input type="button" class="postingbuttons" accesskey="i" name="addbbcode2" value="&#160;" onclick="bbstyle(2)" id="italic" title="{{ lang('BBCODE_I_HELP') }}" />
+	<input type="button" class="postingbuttons" accesskey="u" name="addbbcode4" value="&#160;" onclick="bbstyle(4)" id="underline" title="{{ lang('BBCODE_U_HELP') }}" />
+	{% if S_BBCODE_QUOTE %}
+	<input type="button" class="postingbuttons" accesskey="q" name="addbbcode6" value="&#160;" onclick="bbstyle(6)" id="comments" title="{{ lang('BBCODE_Q_HELP') }}" />
+	{% endif %}
+	<input type="button" class="postingbuttons" accesskey="c" name="addbbcode8" value="&#160;" onclick="bbstyle(8)" id="page_white_code" title="{{ lang('BBCODE_C_HELP') }}" />
+	<input type="button" class="postingbuttons" accesskey="l" name="addbbcode10" value="&#160;" onclick="bbstyle(10)" id="text_list_bullets" title="{{ lang('BBCODE_L_HELP') }}" />
+	<input type="button" class="postingbuttons" accesskey="o" name="addbbcode12" value="&#160;" onclick="bbstyle(12)" id="text_list_numbers" title="{{ lang('BBCODE_O_HELP') }}" />
+	<input type="button" class="postingbuttons" accesskey="t" name="addlitsitem" value="&#160;" onclick="bbstyle(-1)" id="bullet_black" title="{{ lang('BBCODE_LISTITEM_HELP') }}" />
+	{% if S_BBCODE_IMG %}
+	<input type="button" class="postingbuttons" accesskey="p" name="addbbcode14" value="&#160;" onclick="bbstyle(14)" id="images" title="{{ lang('BBCODE_P_HELP') }}" />
+	{% endif %}
+	{% if S_LINKS_ALLOWED %}
+	<input type="button" class="postingbuttons" accesskey="w" name="addbbcode16" value="&#160;" onclick="bbstyle(16)" id="world_link" title="{{ lang('BBCODE_W_HELP') }}" />
+	{% endif %}
+	{% if S_BBCODE_FLASH %}
+	<input type="button" class="postingbuttons" accesskey="d" name="addbbcode18" value="&#160;" onclick="bbstyle(18)" id="page_white_flash" title="{{ lang('BBCODE_D_HELP') }}" />
+	{% endif %}
+	<input type="button" class="postingbuttons" name="bbpalette" value="&#160;" onclick="change_palette();" id="color_wheel" title="{{ lang('BBCODE_S_HELP') }}" />
+	{% EVENT dmzx_postingbuttons_posting_editor_buttons_append %}
+	<select name="addbbcodes20" class="bbcode-size" onchange="bbfontstyle('[size=' + this.form.addbbcodes20.options[this.form.addbbcodes20.selectedIndex].value + ']', '[/size]');this.form.addbbcodes20.selectedIndex = 2;" title="{{ lang('BBCODE_F_HELP') }}">
+		<option value="50">{{ lang('FONT_TINY') }}</option>
+		<option value="85">{{ lang('FONT_SMALL') }}</option>
+		<option value="100" selected="selected">{{ lang('FONT_NORMAL') }}</option>
+		{% if not MAX_FONT_SIZE or MAX_FONT_SIZE >= 150 %}
+		 <option value="150">{{ lang('FONT_LARGE') }}</option>
+		 {% if not MAX_FONT_SIZE or MAX_FONT_SIZE >= 200 %}
+		<option value="200">{{ lang('FONT_HUGE') }}</option>
+		 {% endif %}
+		{% endif %}
+	</select>
+	{% EVENT dmzx_postingbuttons_posting_editor_buttons_custom_tags_before %}
+	<select name="addbbcode_custom" class="bbcode-size" onchange="bbstyle(this.form.addbbcode_custom.options[this.form.addbbcode_custom.selectedIndex].value*1);this.form.addbbcode_custom.selectedIndex = 0;">
+		<option value="#" selected="selected" style="display: none">{{ lang('CUSTOM_BBCODES') }}</option>
+		{% for custom_tags in loops.custom_tags %}
+		<option value="{{ custom_tags.BBCODE_ID }}" title="{{ custom_tags.BBCODE_HELPLINE }}">{{ custom_tags.BBCODE_TAG }}</option>
+		{% endfor %}
+	 </select>
+</div>

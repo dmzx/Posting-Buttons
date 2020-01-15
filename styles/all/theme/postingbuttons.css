@@ -7,8 +7,13 @@
 * 
 */
 
-#format-buttons {
-   display: none;
+#format-buttons, #register-and-translit {
+   display: none !important;
+}
+
+.smilies {
+	max-height: 225px;
+	overflow-x: hidden;
 }
 
 #bold {	
@@ -67,8 +72,12 @@
     margin: 6px 0px !important;
     border: 1px solid #979797 !important;
 }
+
 .postingbuttons:hover {
     background-color: #ffffdf !important;
     border: 1px solid #BC2A4D !important;
 }
-	
+
+select.bbcode-size {
+	height: 22px;
+}

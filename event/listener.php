@@ -2,21 +2,15 @@
 /**
 *
 * @package phpBB Extension - Posting Buttons
-* @copyright (c) 2014 dmzx
+* @copyright (c) 2014 dmzx - https://www.dmzx-web.net
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
 namespace dmzx\postingbuttons\event;
 
-/**
-* @ignore
-*/
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
-/**
-* Event listener
-*/
 class listener implements EventSubscriberInterface
 {
 	static public function getSubscribedEvents()
